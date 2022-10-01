@@ -21,3 +21,15 @@ for (int i = 0; i < size; i++)
 }
 
 Console.WriteLine($"Введенный вами массив [{string.Join(", ", array)}]");
+
+int count = 0;
+
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        count++;
+    }
+}
+
+string[] array2 = new string[count];
