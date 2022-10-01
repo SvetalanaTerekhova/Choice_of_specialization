@@ -33,3 +33,15 @@ for (int i = 0; i < array.Length; i++)
 }
 
 string[] array2 = new string[count];
+
+int j = 0;
+
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        array2[j] = array[i];
+        j++;
+    }
+}
+Console.Write($"Новый массив из строк, длина которых меньше, либо равна 3 символам [{string.Join(",", array2)}]");
