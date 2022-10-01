@@ -13,3 +13,11 @@ while (size < 0)
 }
 
 string[] array = new string[size];
+
+for (int i = 0; i < size; i++)
+{
+    Console.Write($"Введите значение {i + 1} элемента массива: ");
+    array[i] = Console.ReadLine();
+}
+
+Console.WriteLine($"Введенный вами массив [{string.Join(", ", array)}]");
